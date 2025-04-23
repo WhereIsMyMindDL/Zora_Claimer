@@ -119,7 +119,7 @@ if __name__ == '__main__':
         [
             row["Private Key"],
             row["Proxy"] if isinstance(row["Proxy"], str) else None,
-            row["Claim Address"] if isinstance(row["Cex Address"], str) else None
+            row["Claim Address"] if isinstance(row["Claim Address"], str) else None
         ]
         for index, row in exel.iterrows()
     ]
